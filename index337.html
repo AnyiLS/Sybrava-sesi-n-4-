@@ -19,10 +19,34 @@
 
 			<a href="./index337.html" class="boton-next"></a>
 
+			<div class="openModal"></div>
+			<!-- modal -->
+			<div class="modal" style="display: none; height: 100%">
+				<<img
+					src="imagenes/pop-21.webp"
+					class="ancho"
+					id="image" />
+				<div class="closeModal"></div>
+			</div>
+
 		</div>
 
 		<!-- Scripts -->
 
-		<script src="./js/scripts.js"></script>
+		<script src="./js/script337.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slide = localStorage.getItem('slide337')
+				if (slide && slide === 'true') {
+					$('.boton-next').show()
+					$('.cursor').hide()
+					$('.vutom-col').hide()
+				} else {
+					localStorage.setItem('slide337', 'false')
+					$('.boton-next').hide()
+					$('.vutom-col').show()
+				}
+			})
+		</script>
 	</body>
 </html>
