@@ -2,6 +2,7 @@ $(document).ready(function () {
 	// modal
     $(".openModal").on("click", () => {
         $(".modal").css("display", "block");
+        sonidobuttom()
     });
     // cerra modal
     $(".closeModal").on("click", () => {

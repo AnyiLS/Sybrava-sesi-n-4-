@@ -61,6 +61,14 @@ body {
     left: 2%;
 }
 
+.calcu {
+	position: absolute;
+	width: 17%;
+    height: 6%;
+    top: 54%;
+    left: 33%;
+}
+
 
 
 /* Definimos la animación para el resplandor */

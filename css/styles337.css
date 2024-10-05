@@ -206,6 +206,63 @@ body {
 }
 
 
+.rosadas {
+	position: absolute;
+    width: 20%;
+    height: 35.3%;
+    top: 34.7%;
+    left: 7.3%;
+    cursor: pointer;
+}
+
+.rosadas img {
+	width: 100%;
+	height: 100%;
+}
+
+.rosadas1 {
+	position: absolute;
+    width: 20.4%;
+    height: 35.3%;
+    top: 34.7%;
+    left: 28.7%;
+    cursor: pointer;
+}
+
+.rosadas1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.rosadas2 {
+	position: absolute;
+    width: 20.4%;
+    height: 35.3%;
+    top: 34.3%;
+    right: 28.7%;
+    cursor: pointer;
+}
+
+.rosadas2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.rosadas3 {
+	position: absolute;
+    width: 20.4%;
+    height: 35.3%;
+    top: 34.3%;
+    right: 7.2%;
+    cursor: pointer;
+}
+
+.rosadas3 img {
+	width: 100%;
+	height: 100%;
+}
+
+
 /* Definimos la animación para el resplandor */
 @keyframes pulseGlow {
 	0% {
