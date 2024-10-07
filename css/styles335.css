@@ -21,6 +21,17 @@ body {
 	height: 100vh;
 }
 
+.vutom-col {
+	position: absolute;
+	width: 5%;
+    height: 9%;
+    top: 85.7%;
+    right: 34%;
+	background: #80808087;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
 .start-button {
 	position: absolute;
 	top: 0%;

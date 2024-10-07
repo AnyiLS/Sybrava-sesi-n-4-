@@ -19,11 +19,21 @@
 
 			<div class="boton-next" id="button_next"></div>
 
-			<a href="https://www.globorisk.org/calc/officeform" target="_blank" class="calcu"></a>
+			<a href="https://www.globorisk.org/calc/officeform" id="link" target="_blank" class="calcu"></a>
 
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
 		<script src="./js/script335.js"></script>
+		<script>
+			document.getElementById('link').addEventListener('click', () => {
+				document.querySelector('.vutom-col').style.display = 'none'
+				localStorage.setItem('check', 'true')
+			}) 
+			if(localStorage.getItem('check') === 'true') {
+				document.querySelector('.vutom-col').style.display = 'none'
+			}
+		</script>
 	</body>
 </html>

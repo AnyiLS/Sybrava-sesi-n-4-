@@ -24,7 +24,7 @@
 			<a href="./index322.html" class="boton-atras"></a>
 			<a href="./index324.html" class="boton-next"></a>
 
-			<a href="./index341.html" class="edito"></a>
+			<a href="./index341.html" class="edito" id="edito4"></a>
 
 			<div
 				class="puntero animate__animated animate__pulse animate__infinite">
@@ -39,14 +39,15 @@
 
 		<script src="./js/script.js"></script>
 		<script>
-			const key = localStorage.getItem('key')
-
-			if(key) document.querySelector('.vutom-col').style.display = 'none'
-
-			document.querySelector('.edito').addEventListener('click', () => {
-				localStorage.setItem('key', 'true')
-				window.location.href = "./index320.html"
+			document.querySelector('#edito4').addEventListener('click', () => {
+				localStorage.setItem('key3', 'true')
+				document.querySelector('.vutom-col').style.display = 'none'
+				// window.location.href = "./index320.html"
 			})
+
+			if(localStorage.getItem('key3') === 'true') {
+				document.querySelector('.vutom-col').style.display = 'none'
+			}
 		</script>
 	</body>
 </html>
