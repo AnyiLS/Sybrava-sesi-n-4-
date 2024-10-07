@@ -205,3 +205,20 @@ body {
 		height: auto;
 	}
 }
+#quantity, #quantity-bad {
+	position: absolute;
+    top: 31%;
+    right: 30%;
+	font-family: 'VoltaModernDisplay-75Bold';
+    color: #022069;
+}
+
+.next-bad, .next {
+	position: absolute;
+	cursor: pointer;
+    top: 74%;
+    right: 0%;
+    width: 5.6%;
+    height: 12.2%;
+    border-radius: 100%;
+}

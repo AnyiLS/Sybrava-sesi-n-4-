@@ -17,23 +17,29 @@
 				alt="Portada"
 				class="cover-image" />
 
-			<a href="./index337.html" class="boton-next"></a>
+			<span id="quantity-number">4</span>
+
+			<!-- <a href="./index337.html" class="boton-next"></a> -->
 
 			<!-- Preguntas de cada personaje aleatorio -->
 			<!-- Modal 1 -->
 			<div class="openModal"></div>
 			<!-- modal -->
 			<div class="modal" style="display: none; height: 100%">
-				<<img src="./imagenes/pop-21.jpg" class="ancho" id="image" />
-				<div class="closeModal"></div>
+				<img src="./imagenes/pop-21.jpg" class="ancho" id="image" />
 
-				<div class="per-1">
-					<img src="./imagenes/per-1.png" alt="" style="display: block;">
+				<div class="per-1" style="display: block;">
+					<img src="./imagenes/per-1.png" alt="" >
 				</div>
 
-				<div class="per-2">
-					<img src="./imagenes/per-2.png" alt="" style="display: none;">
+				<div class="per-2" style="display: none;">
+					<img src="./imagenes/per-2.png" alt="">
+					<div id="next-person-1"></div>
 				</div>
+
+				<input type="number" id="input-response-1">
+
+				<div id="next-button-1"></div>
 			</div>
 
 			<!-- Modal 1 -->
@@ -42,16 +48,20 @@
 			<div class="openModal1"></div>
 			<!-- modal -->
 			<div class="modal1" style="display: none; height: 100%">
-				<<img src="imagenes/pop-21.jpg" class="ancho" id="image" />
-				<div class="closeModal1"></div>
+				<img src="imagenes/pop-21.jpg" class="ancho" id="image" />
 
-				<div class="per-3">
-					<img src="./imagenes/per-3.png" alt="" style="display: block;">
+				<div class="per-3"  style="display: block;">
+					<img src="./imagenes/per-3.png" alt="">
 				</div>
 
-				<div class="per-4">
-					<img src="./imagenes/per-4.png" alt="" style="display: none;">
+				<div class="per-4" style="display: none;">
+					<img src="./imagenes/per-4.png" alt="" >
+					<div id="next-person-2" style="right: 11%;"></div>
 				</div>
+
+				<input type="number" id="input-response-2">
+
+				<div id="next-button-2"></div>
 			</div>
 
 			<!-- Modal 2 -->
@@ -61,15 +71,19 @@
 			<!-- modal -->
 			<div class="modal2" style="display: none; height: 100%">
 				<<img src="imagenes/pop-21.jpg" class="ancho" id="image" />
-				<div class="closeModal2"></div>
 
-				<div class="per-5">
-					<img src="./imagenes/per-5.png" alt="" style="display: block;">
+				<div class="per-5" style="display: block;">
+					<img src="./imagenes/per-5.png" alt="">
 				</div>
 
-				<div class="per-6">
-					<img src="./imagenes/per-6.png" alt="" style="display: none;">
+				<div class="per-6" style="display: none;">
+					<img src="./imagenes/per-6.png" alt="">
+					<div id="next-person-3" style="top: 56%;right: 3%;"></div>
 				</div>
+
+				<input type="number" id="input-response-3">
+
+				<div id="next-button-3"></div>
 			</div>
 
 			<!-- Modal 3 -->
@@ -79,15 +93,19 @@
 			<!-- modal -->
 			<div class="modal3" style="display: none; height: 100%">
 				<<img src="imagenes/pop-21.jpg" class="ancho" id="image" />
-				<div class="closeModal3"></div>
 
-				<div class="per-7">
-					<img src="./imagenes/per-7.png" alt="" style="display: block;">
+				<div class="per-7"  style="display: block;">
+					<img src="./imagenes/per-7.png" alt="">
 				</div>
 
-				<div class="per-8">
-					<img src="./imagenes/per-8.png" alt="" style="display: none;">
+				<div class="per-8"  style="display: none;">
+					<img src="./imagenes/per-8.png" alt=""	>
+					<div id="next-person-4" style="top: 72%;right: 8%;"></div>
 				</div>
+
+				<input type="number" id="input-response-4">
+
+				<div id="next-button-4"></div>
 			</div>
 
 			<!-- Modal 4 -->
@@ -123,9 +141,8 @@
 		</div>
 
 		<!-- Scripts -->
-
+		<script src="./js/sonidos.js"></script>
 		<script src="./js/script337.js"></script>
-		<script src="./imagenes/sonidos/sonido-carta.mp3"></script>
 		<script>
 			$(document).ready(function () {
 				const slide = localStorage.getItem('slide337')

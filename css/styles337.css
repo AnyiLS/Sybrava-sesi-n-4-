@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'VoltaModernDisplay-75Bold';
+	src: url('../imagenes/VoltaModernDisplay-75Bold.otf');
+}
+
 body {
 	margin: 0;
 	height: 100vh;
@@ -232,11 +237,11 @@ body {
 /* persnajes */
 .per-1 {
 	position: absolute;
-	width: 77.6%;
-    height: 71.3%;
-    top: 15.7%;
+    width: 99.8%;
+    height: 89.1%;
+    top: -2.3%;
     left: 6%;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .per-1 img {
@@ -263,11 +268,11 @@ body {
 /* persnajes */
 .per-3 {
 	position: absolute;
-	width: 75.5%;
-    height: 65.3%;
+    width: 90.5%;
+    height: 81.5%;
     top: 18.7%;
-    left: 8.1%;
-	cursor: pointer;
+    left: 0.1%;
+    cursor: pointer;
 }
 
 .per-3 img {
@@ -294,7 +299,7 @@ body {
 /* persnajes */
 .per-5 {
 	position: absolute;
-	width: 75.8%;
+	width: 82.7%;
     height: 65.3%;
     top: 18.7%;
     left: 7.7%;
@@ -325,7 +330,7 @@ body {
 /* persnajes */
 .per-7 {
 	position: absolute;
-	width: 75.8%;
+	width: 82.8%;
     height: 65.3%;
     top: 18.7%;
     left: 7.7%;
@@ -468,4 +473,73 @@ body {
 		width: 100vw;
 		height: auto;
 	}
+}
+
+#quantity-number {
+	position: absolute;
+    top: 81.3%;
+    left: 53.7%;
+	font-family: 'VoltaModernDisplay-75Bold';
+	color: white;
+}
+
+#input-response-1, #input-response-2, #input-response-3, #input-response-4 {
+	position: absolute;
+    top: 78.2%;
+    left: 68.9%;
+    z-index: 1;
+    width: 4.7%;
+    height: 3%;
+    border: none;
+	z-index: 10000000000;
+    text-align: center;
+}
+
+#input-response-1:focus,
+#input-response-1:focus-visible,
+#input-response-1:focus-within,
+#input-response-2:focus,
+#input-response-2:focus-visible,
+#input-response-2:focus-within,
+#input-response-3:focus,
+#input-response-3:focus-visible,
+#input-response-3:focus-within,
+#input-response-4:focus,
+#input-response-4:focus-visible,
+#input-response-4:focus-within {
+	outline: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield; /* Firefox */
+	-webkit-appearance: none; /* Safari y Chrome */
+	appearance: none; /* Otros navegadores */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#next-button-1, #next-button-2, #next-button-3, #next-button-4 {
+	position: absolute;
+    top: 73%;
+    right: 8%;
+    width: 103px;
+    height: 100px;
+    z-index: 1;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#next-person-1, #next-person-2, #next-person-3, #next-person-4 {
+	position: absolute;
+    top: 55%;
+    right: 7%;
+    width: 117px;
+    height: 120px;
+    z-index: 100000000;
+    border-radius: 100%;
+    cursor: pointer;
 }
