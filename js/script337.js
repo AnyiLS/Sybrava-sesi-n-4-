@@ -1,7 +1,7 @@
 const handleGetFontSize = () => {
 	const container = document.querySelector('.container'),
 		height = container.clientHeight,
-		total = height / 26
+		total = height / 28
 
 	return `${total}px`
 }

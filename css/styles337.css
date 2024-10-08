@@ -493,6 +493,8 @@ body {
     border: none;
 	z-index: 10000000000;
     text-align: center;
+	color: #022069;
+    font-weight: 700;
 }
 
 #input-response-1:focus,
